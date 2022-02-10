@@ -1,12 +1,29 @@
 // First override some or all individual color variables
-$primary: #25408f;
-$secondary: #8f5325;
+$primary: #8601af;
+$secondary: #ffe484;
 $success: #3e8d63;
 $info: #13101c;
 $warning: #945707;
 $danger: #d62518;
 $light: #f8f9fa;
 $dark: #343a40;
+
+$body-bg: $light;
+$body-color: $info;
+
+#bard-guy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+.bard-text {
+	font-family: 'WindSong', cursive;
+}
 
 // Then add them to your custom theme-colors map, together with any additional colors you might need
 $theme-colors: (
@@ -17,8 +34,7 @@ $theme-colors: (
 	warning: $warning,
 	danger: $danger,
 	light: $light,
-	dark: $dark,
-	// add any additional color below
+	dark: $dark
 );
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
